@@ -3,6 +3,10 @@ class CoinCapApiInterface
     get_json('/v2/assets')
   end
 
+  def get_rates
+    get_json('v2/rates')
+  end
+
   private
 
   def get_json(url)
