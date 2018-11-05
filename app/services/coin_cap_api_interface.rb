@@ -11,6 +11,10 @@ class CoinCapApiInterface
     get_json('v2/exchanges')
   end
 
+  def get_markets
+    get_json('v2/markets')
+  end
+
   private
 
   def get_json(url)
