@@ -25,4 +25,14 @@ describe 'CoinCapApiInterface' do
     expect(parsed).to be_a(Hash)
     expect(parsed[:data]).to be_an(Array)
   end
+  it "should return coincap exchanges" do
+    coincap = CoinCapApiInterface.new
+
+    response = coincap.get_rates
+    parsed = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response.status).to eq(200)
+    expect(parsed).to be_a(Hash)
+    expect(parsed[:data]).to be_an(Array)
+  end
 end
