@@ -8,7 +8,7 @@ describe 'CoinCapApiInterface' do
   it "should return coincap assets" do
     coincap = CoinCapApiInterface.new
 
-    response = coincap.get_assets
+    response = coincap.get_json('/v2/assets')
     parsed = JSON.parse(response.body, symbolize_names: true)
 
     expect(response.status).to eq(200)
