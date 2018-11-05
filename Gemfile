@@ -26,6 +26,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'simplecov'
   gem 'faker'
+  gem 'database_cleaner'
 end
 
 group :development do
