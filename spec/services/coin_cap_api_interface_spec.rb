@@ -7,42 +7,30 @@ describe 'CoinCapApiInterface' do
   end
   it "should return coincap assets" do
     coincap = CoinCapApiInterface.new
-
     response = coincap.get_assets
-    parsed = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response.status).to eq(200)
-    expect(parsed).to be_a(Hash)
-    expect(parsed[:data]).to be_an(Array)
+    expect(response).to be_an(Array)
+    expect(response.first).to be_a(Hash)
   end
   it "should return coincap rates" do
     coincap = CoinCapApiInterface.new
-
     response = coincap.get_rates
-    parsed = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response.status).to eq(200)
-    expect(parsed).to be_a(Hash)
-    expect(parsed[:data]).to be_an(Array)
+    expect(response).to be_a(Hash)
+    expect(response[:data]).to be_an(Array)
   end
   it "should return coincap exchanges" do
     coincap = CoinCapApiInterface.new
-
     response = coincap.get_exchanges
-    parsed = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response.status).to eq(200)
-    expect(parsed).to be_a(Hash)
-    expect(parsed[:data]).to be_an(Array)
+    expect(response).to be_a(Hash)
+    expect(response[:data]).to be_an(Array)
   end
   it "should return coincap markets" do
     coincap = CoinCapApiInterface.new
-
     response = coincap.get_markets
-    parsed = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response.status).to eq(200)
-    expect(parsed).to be_a(Hash)
-    expect(parsed[:data]).to be_an(Array)
+    expect(response).to be_a(Hash)
+    expect(response[:data]).to be_an(Array)
   end
 end
