@@ -1,15 +1,15 @@
 class CoinCapApiInterface
-  def get_json(url)
-    conn.get(url)
+  def get_assets
+    get_json('/v2/assets')
   end
 
   private
 
-  def conn
-    Faraday.new(url: ENV['COINCAP_PATH'])
+  def get_json(url)
+    conn.get(url)
   end
 
-  def assets
-    "/v2/assets"
+  def conn
+    Faraday.new(url: ENV['COINCAP_PATH'])
   end
 end
