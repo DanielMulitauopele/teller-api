@@ -1,48 +1,35 @@
 require 'rails_helper'
 
 describe 'CoinCapApiInterface' do
+  before (:each) do
+    @coincap = CoinCapApiInterface.new
+    @assets = @coincap.get_assets
+    @rates = @coincap.get_rates
+    @exchanges = @coincap.get_exchanges
+    @markets = @coincap.get_markets
+  end
+
   it "should exist" do
-    coincap = CoinCapApiInterface.new
-    expect(coincap).to be_a(CoinCapApiInterface)
+    expect(@coincap).to be_a(CoinCapApiInterface)
   end
+
   it "should return coincap assets" do
-    coincap = CoinCapApiInterface.new
-
-    response = coincap.get_assets
-    parsed = JSON.parse(response.body, symbolize_names: true)
-
-    expect(response.status).to eq(200)
-    expect(parsed).to be_a(Hash)
-    expect(parsed[:data]).to be_an(Array)
+    expect(@assets).to be_an(Array)
+    expect(@assets.first).to be_a(Hash)
   end
+
   it "should return coincap rates" do
-    coincap = CoinCapApiInterface.new
-
-    response = coincap.get_rates
-    parsed = JSON.parse(response.body, symbolize_names: true)
-
-    expect(response.status).to eq(200)
-    expect(parsed).to be_a(Hash)
-    expect(parsed[:data]).to be_an(Array)
+    expect(@rates).to be_a(Hash)
+    expect(@rates[:data]).to be_an(Array)
   end
+
   it "should return coincap exchanges" do
-    coincap = CoinCapApiInterface.new
-
-    response = coincap.get_exchanges
-    parsed = JSON.parse(response.body, symbolize_names: true)
-
-    expect(response.status).to eq(200)
-    expect(parsed).to be_a(Hash)
-    expect(parsed[:data]).to be_an(Array)
+    expect(@exchanges).to be_a(Hash)
+    expect(@exchanges[:data]).to be_an(Array)
   end
+
   it "should return coincap markets" do
-    coincap = CoinCapApiInterface.new
-
-    response = coincap.get_markets
-    parsed = JSON.parse(response.body, symbolize_names: true)
-
-    expect(response.status).to eq(200)
-    expect(parsed).to be_a(Hash)
-    expect(parsed[:data]).to be_an(Array)
+    expect(@markets).to be_a(Hash)
+    expect(@markets[:data]).to be_an(Array)
   end
 end

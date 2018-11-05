@@ -1,6 +1,6 @@
 class CoinCapApiInterface
   def get_assets
-    get_json('/v2/assets')
+    get_json('/v2/assets')[:data]
   end
 
   def get_rates
@@ -18,7 +18,7 @@ class CoinCapApiInterface
   private
 
   def get_json(url)
-    conn.get(url)
+    JSON.parse(conn.get(url).body, symbolize_names: true)
   end
 
   def conn
