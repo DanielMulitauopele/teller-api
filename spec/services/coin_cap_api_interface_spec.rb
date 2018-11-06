@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'CoinCapApiInterface' do
+describe CoinCapApiInterface do
   before (:each) do
     @coincap = CoinCapApiInterface.new
     @assets = @coincap.get_assets
@@ -9,7 +9,7 @@ describe 'CoinCapApiInterface' do
     @markets = @coincap.get_markets
   end
 
-  it "should exist" do
+  it "exists" do
     expect(@coincap).to be_a(CoinCapApiInterface)
   end
 
