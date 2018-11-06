@@ -1,5 +1,5 @@
 class Api::V1::AssetsController < ApplicationController
   def index
-    require "pry"; binding.pry
+    render json: AssetFacade.new.assets
   end
 end
