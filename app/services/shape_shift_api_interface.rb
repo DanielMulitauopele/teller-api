@@ -3,6 +3,14 @@ class ShapeShiftApiInterface
     get_json('/marketinfo')
   end
 
+  def get_shape_shift_coins
+    get_json('/getcoins')
+  end
+
+  def get_recent_transactions
+    get_json('/recenttx')
+  end
+
   private
 
   def get_json(url)
