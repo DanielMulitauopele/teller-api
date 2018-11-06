@@ -8,7 +8,7 @@ class CoinCapApiInterface
   end
 
   def get_exchanges
-    get_json('v2/exchanges')
+    get_json('v2/exchanges')[:data]
   end
 
   def get_markets

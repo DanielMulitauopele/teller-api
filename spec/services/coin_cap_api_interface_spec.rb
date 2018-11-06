@@ -24,8 +24,8 @@ describe CoinCapApiInterface do
   end
 
   it "should return coincap exchanges" do
-    expect(@exchanges).to be_a(Hash)
-    expect(@exchanges[:data]).to be_an(Array)
+    expect(@exchanges).to be_an(Array)
+    expect(@exchanges.first).to be_an(Hash)
   end
 
   it "should return coincap markets" do
