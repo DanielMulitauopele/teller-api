@@ -20,6 +20,13 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 end
 
+VCR.configure do |config|
+  config.cassette_library_dir = "fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.filter_sensitive_data(ENV['COINCAP_PATH']) { 'COINCAP_PATH' }
+  config.filter_sensitive_data(ENV['SHAPESHIFT_PATH']) { 'SHAPESHIFT_PATH' }
+end
+
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec

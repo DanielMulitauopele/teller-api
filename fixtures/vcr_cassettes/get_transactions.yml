@@ -1,0 +1,731 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:12:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d81aebd393ff569261925f948e88bb4481541535140; expires=Wed, 06-Nov-19
+        20:12:20 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1b2-91P7Id7OcaUfePv30XuKS6HI0g0"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a36e53f905017-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":427795},{"curIn":"ETH","curOut":"DASH","timestamp":1541534965.276,"amount":15,"txid":919158},{"curIn":"BTC","curOut":"ZEC","timestamp":1541534881.262,"amount":0.01495265,"txid":761838},{"curIn":"ETH","curOut":"BTC","timestamp":1541534764.27,"amount":1,"txid":358423},{"curIn":"KMD","curOut":"DOGE","timestamp":1541534741.238,"amount":0.142065,"txid":644656}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:12:20 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:17:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc899ce836d7889ebd5fa6ac3e3eed95c1541535466; expires=Wed, 06-Nov-19
+        20:17:46 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1bf-C0uleo4VI0fj3svZFz1sMfz5yGw"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a3edbaccd4ff3-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":212952},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":150853},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":458184},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":667939},{"curIn":"ETH","curOut":"DASH","timestamp":1541534965.276,"amount":15,"txid":759819}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:17:47 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:17:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d30de958b306610b28bc9f894a15d7e241541535468; expires=Wed, 06-Nov-19
+        20:17:48 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1bf-C0uleo4VI0fj3svZFz1sMfz5yGw"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a3ee68fdc4ff3-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":212952},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":150853},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":458184},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":667939},{"curIn":"ETH","curOut":"DASH","timestamp":1541534965.276,"amount":15,"txid":759819}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:17:48 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:17:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6c8484ea25f13ea1d1c20453bb2c55f51541535470; expires=Wed, 06-Nov-19
+        20:17:50 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1bf-C0uleo4VI0fj3svZFz1sMfz5yGw"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a3ef13add4ff9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":212952},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":150853},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":458184},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":667939},{"curIn":"ETH","curOut":"DASH","timestamp":1541534965.276,"amount":15,"txid":759819}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:17:50 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:17:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4fae87014c13721c1a9c99a69350e9cb1541535471; expires=Wed, 06-Nov-19
+        20:17:51 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1bf-C0uleo4VI0fj3svZFz1sMfz5yGw"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a3efa5ec45017-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":212952},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":150853},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":458184},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":667939},{"curIn":"ETH","curOut":"DASH","timestamp":1541534965.276,"amount":15,"txid":759819}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:17:52 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:19:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=deec18c1ab697c59bdd49428ec265b1b71541535589; expires=Wed, 06-Nov-19
+        20:19:49 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1c8-1YmV+yzgXA4gLOzphkQbnyBxRXg"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a41da28bc5029-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"DOGE","curOut":"ETH","timestamp":1541535343.999,"amount":523.99103207,"txid":746571},{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":51301},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":418777},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":105769},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":634493}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:19:49 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:19:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da387c95e87176a99251f0133ef07b8ce1541535591; expires=Wed, 06-Nov-19
+        20:19:51 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1c8-1YmV+yzgXA4gLOzphkQbnyBxRXg"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a41e51e364ff9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"DOGE","curOut":"ETH","timestamp":1541535343.999,"amount":523.99103207,"txid":746571},{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":51301},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":418777},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":105769},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":634493}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:19:51 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:19:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d373b1d56f8d9f78d7fac7fb0db0ef0ae1541535592; expires=Wed, 06-Nov-19
+        20:19:52 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1c8-1YmV+yzgXA4gLOzphkQbnyBxRXg"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a41eeea994fdb-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"DOGE","curOut":"ETH","timestamp":1541535343.999,"amount":523.99103207,"txid":746571},{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":51301},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":418777},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":105769},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":634493}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:19:53 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:19:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc0998b4f2ad7135e7456fd1d85ce4d751541535594; expires=Wed, 06-Nov-19
+        20:19:54 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1c8-1YmV+yzgXA4gLOzphkQbnyBxRXg"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a41f9cf644fd5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"DOGE","curOut":"ETH","timestamp":1541535343.999,"amount":523.99103207,"txid":746571},{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":51301},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":418777},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":105769},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":634493}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:19:54 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:20:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d93f87d14e013f21dab6675c5305214311541535648; expires=Wed, 06-Nov-19
+        20:20:48 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1c9-svdl3uLq1UvMOsre8q9jFVLJsSw"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a434e38074fdb-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"DOGE","curOut":"ETH","timestamp":1541535343.999,"amount":523.99103207,"txid":613297},{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":402550},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":391131},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":388057},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":290975}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:20:49 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:20:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d62ddbd2353bb9f795edc672f35075c8a1541535650; expires=Wed, 06-Nov-19
+        20:20:50 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1c9-svdl3uLq1UvMOsre8q9jFVLJsSw"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a435959035017-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"DOGE","curOut":"ETH","timestamp":1541535343.999,"amount":523.99103207,"txid":613297},{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":402550},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":391131},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":388057},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":290975}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:20:51 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:20:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d39830eeed1aefcd10dbd18d31e745d7a1541535652; expires=Wed, 06-Nov-19
+        20:20:52 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1c9-svdl3uLq1UvMOsre8q9jFVLJsSw"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a4361bb035017-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"DOGE","curOut":"ETH","timestamp":1541535343.999,"amount":523.99103207,"txid":613297},{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":402550},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":391131},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":388057},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":290975}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:20:52 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:20:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d102cb9b21f64566aa95c941c383db88c1541535655; expires=Wed, 06-Nov-19
+        20:20:55 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1c9-svdl3uLq1UvMOsre8q9jFVLJsSw"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a4374dd79501d-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"DOGE","curOut":"ETH","timestamp":1541535343.999,"amount":523.99103207,"txid":613297},{"curIn":"ETC","curOut":"ZEC","timestamp":1541535299.061,"amount":0.71019175,"txid":402550},{"curIn":"KMD","curOut":"DGB","timestamp":1541535246.267,"amount":0.02112986,"txid":391131},{"curIn":"ETC","curOut":"DOGE","timestamp":1541535198.987,"amount":0.150783955,"txid":388057},{"curIn":"ETC","curOut":"CVC","timestamp":1541534998.836,"amount":2,"txid":290975}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:20:55 GMT
+recorded_with: VCR 4.0.0
