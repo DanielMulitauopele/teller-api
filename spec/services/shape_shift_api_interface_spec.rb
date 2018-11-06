@@ -1,10 +1,15 @@
 require 'rails_helper'
 
-describe ShapeShiftApi do
+describe ShapeShiftApiInterface do
   before (:each) do
-    @shapeshift = ShapeShiftApi.new
+    @shapeshift = ShapeShiftApiInterface.new
   end
+
   it "exists" do
-    expect(@shapeshift).to be_a(ShapeShiftApi)
+    expect(@shapeshift).to be_a(ShapeShiftApiInterface)
+  end
+
+  it "should return market info" do
+
   end
 end

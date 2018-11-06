@@ -9,7 +9,7 @@ describe CoinCapApiInterface do
     @markets = @coincap.get_markets
   end
 
-  it "should exist" do
+  it "exists" do
     expect(@coincap).to be_a(CoinCapApiInterface)
   end
 
