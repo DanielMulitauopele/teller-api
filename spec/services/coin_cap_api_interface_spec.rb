@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'CoinCapApiInterface' do
+describe CoinCapApiInterface do
   before (:each) do
     @coincap = CoinCapApiInterface.new
     @assets = @coincap.get_assets
