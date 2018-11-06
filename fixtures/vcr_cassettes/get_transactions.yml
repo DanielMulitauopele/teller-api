@@ -224,4 +224,228 @@ http_interactions:
       string: '[{"curIn":"ETH","curOut":"DASH","timestamp":1541535849.316,"amount":13,"txid":31798},{"curIn":"ETC","curOut":"ETH","timestamp":1541535759.403,"amount":0.19458,"txid":348463},{"curIn":"ETC","curOut":"BTC","timestamp":1541535679.328,"amount":6.34111281,"txid":390845},{"curIn":"LTC","curOut":"BTC","timestamp":1541535604.823,"amount":7.48376157,"txid":207087},{"curIn":"DOGE","curOut":"BTC","timestamp":1541535570.937,"amount":3000,"txid":554245}]'
     http_version: 
   recorded_at: Tue, 06 Nov 2018 20:25:59 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:30:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc09678b59d3fb3931186360e1546a35c1541536244; expires=Wed, 06-Nov-19
+        20:30:44 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1d6-ZPvD3vjn8BMqC33qspUgPT4LGVI"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a51d7ebe44fdb-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETH","curOut":"BTC","timestamp":1541536070.535,"amount":0.04975265014948691,"txid":345753},{"curIn":"ETH","curOut":"BTC","timestamp":1541536030.211,"amount":0.199699038121251,"txid":987294},{"curIn":"ETH","curOut":"BTC","timestamp":1541535969.945,"amount":0.02315029,"txid":41865},{"curIn":"BLK","curOut":"DGB","timestamp":1541535912.045,"amount":0.3999,"txid":943219},{"curIn":"ETC","curOut":"DASH","timestamp":1541535899.511,"amount":1.99916,"txid":428365}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:30:44 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:30:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5e165dae029f141b774f20716433d3a01541536245; expires=Wed, 06-Nov-19
+        20:30:45 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1d6-ZPvD3vjn8BMqC33qspUgPT4LGVI"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a51e03aba4fe7-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETH","curOut":"BTC","timestamp":1541536070.535,"amount":0.04975265014948691,"txid":345753},{"curIn":"ETH","curOut":"BTC","timestamp":1541536030.211,"amount":0.199699038121251,"txid":987294},{"curIn":"ETH","curOut":"BTC","timestamp":1541535969.945,"amount":0.02315029,"txid":41865},{"curIn":"BLK","curOut":"DGB","timestamp":1541535912.045,"amount":0.3999,"txid":943219},{"curIn":"ETC","curOut":"DASH","timestamp":1541535899.511,"amount":1.99916,"txid":428365}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:30:45 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:30:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7a58b5dc09dc0cea926d121c7361f7a51541536247; expires=Wed, 06-Nov-19
+        20:30:47 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1d6-ZPvD3vjn8BMqC33qspUgPT4LGVI"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a51e7efab5023-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETH","curOut":"BTC","timestamp":1541536070.535,"amount":0.04975265014948691,"txid":345753},{"curIn":"ETH","curOut":"BTC","timestamp":1541536030.211,"amount":0.199699038121251,"txid":987294},{"curIn":"ETH","curOut":"BTC","timestamp":1541535969.945,"amount":0.02315029,"txid":41865},{"curIn":"BLK","curOut":"DGB","timestamp":1541535912.045,"amount":0.3999,"txid":943219},{"curIn":"ETC","curOut":"DASH","timestamp":1541535899.511,"amount":1.99916,"txid":428365}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:30:47 GMT
+- request:
+    method: get
+    uri: https://shapeshift.io/recenttx
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Nov 2018 20:30:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de3ea75f8dceda9a8a5860d59562e04f11541536248; expires=Wed, 06-Nov-19
+        20:30:48 GMT; path=/; domain=.shapeshift.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - public, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1d6-ZPvD3vjn8BMqC33qspUgPT4LGVI"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 475a51f18914500b-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"curIn":"ETH","curOut":"BTC","timestamp":1541536070.535,"amount":0.04975265014948691,"txid":345753},{"curIn":"ETH","curOut":"BTC","timestamp":1541536030.211,"amount":0.199699038121251,"txid":987294},{"curIn":"ETH","curOut":"BTC","timestamp":1541535969.945,"amount":0.02315029,"txid":41865},{"curIn":"BLK","curOut":"DGB","timestamp":1541535912.045,"amount":0.3999,"txid":943219},{"curIn":"ETC","curOut":"DASH","timestamp":1541535899.511,"amount":1.99916,"txid":428365}]'
+    http_version: 
+  recorded_at: Tue, 06 Nov 2018 20:30:48 GMT
 recorded_with: VCR 4.0.0

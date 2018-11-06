@@ -3,15 +3,9 @@ require 'rails_helper'
 describe ShapeShiftApiInterface do
   before (:each) do
     @shapeshift = ShapeShiftApiInterface.new
-    VCR.use_cassette('get_market_info', record: :new_episodes) do
-      @market_info = @shapeshift.get_market_info
-    end
-    VCR.use_cassette('get_coins', record: :new_episodes) do
-      @ss_coins = @shapeshift.get_shape_shift_coins
-    end
-    VCR.use_cassette('get_transactions', record: :new_episodes) do
-      @recent_txs = @shapeshift.get_recent_transactions
-    end
+    @market_info = @shapeshift.get_market_info
+    @ss_coins = @shapeshift.get_shape_shift_coins
+    @recent_txs = @shapeshift.get_recent_transactions
   end
 
   it "exists" do

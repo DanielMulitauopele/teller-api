@@ -3,18 +3,10 @@ require 'rails_helper'
 describe CoinCapApiInterface do
   before (:each) do
     @coincap = CoinCapApiInterface.new
-    VCR.use_cassette('get_assets', record: :new_episodes) do
-      @assets = @coincap.get_assets
-    end
-    VCR.use_cassette('get_rates', record: :new_episodes) do
-      @rates = @coincap.get_rates
-    end
-    VCR.use_cassette('get_exchanges', record: :new_episodes) do
-      @exchanges = @coincap.get_exchanges
-    end
-    VCR.use_cassette('get_markets', record: :new_episodes) do
-      @markets = @coincap.get_markets
-    end
+    @assets = @coincap.get_assets
+    @rates = @coincap.get_rates
+    @exchanges = @coincap.get_exchanges
+    @markets = @coincap.get_markets
   end
 
   it "exists" do
