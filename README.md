@@ -21,4 +21,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* App that runs watson emotive analysis on tweets and news on specific cryptocurrencies
