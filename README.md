@@ -1,4 +1,4 @@
-# Teller JS
+# Teller API
 
 ## Relevant Links
  * [Agile Board](https://waffle.io/DanielMulitauopele/teller-js)
