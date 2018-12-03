@@ -21,9 +21,9 @@ This back-end application was built as the last solo project for Module 3 of the
 
 The application uses only 3 endpoints in its current iteration, with more to come in the future. These endpoints are loaded with data that is pulled from the ShapeShift API, as well as the CoinCap API. Future iterations will utilize Twitter's API and IBM's Watson. The endpoints are as follows:
 
-ASSETS       GET - https://guarded-reef-25579.herokuapp.com/api/v1/assets
-EXCHANGES    GET - https://guarded-reef-25579.herokuapp.com/api/v1/exchanges
-TRANSACTIONS GET - https://guarded-reef-25579.herokuapp.com/api/v1/transactions
+* ASSETS       GET - https://guarded-reef-25579.herokuapp.com/api/v1/assets
+* EXCHANGES    GET - https://guarded-reef-25579.herokuapp.com/api/v1/exchanges
+* TRANSACTIONS GET - https://guarded-reef-25579.herokuapp.com/api/v1/transactions
 
 ## Known Issues
 
