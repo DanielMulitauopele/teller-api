@@ -14,12 +14,20 @@ This back-end application was built as the last solo project for Module 3 of the
 
 * Clone this repository down into a local directory of your choice.
 * Run bundle
+* Run bundle update
+* Run rake db:{drop,create,migrate}
 * Run rails s to open a local server
 
 
 ## How to Use
 
-The application uses only 3 endpoints in its current iteration, with more to come in the future. These endpoints are loaded with data that is pulled from the ShapeShift API, as well as the CoinCap API. Future iterations will utilize Twitter's API and IBM's Watson. The endpoints are as follows:
+The application uses only 3 endpoints in its current iteration, with more to come in the future. These endpoints are loaded with data that is pulled from the ShapeShift API, as well as the CoinCap API. Future iterations will utilize Twitter's API and IBM's Watson. In order, for the application to run on a local machine, the user will need an application.yml file that holds the required environmental variables. The variables below will allows the user to access the ShapeShift API and the CoinCap API. For Twitter, the user will need to acquire their own API key:
+
+production:
+  COINCAP_PATH: https://api.coincap.io
+  SHAPESHIFT_PATH: https://shapeshift.io
+
+The endpoints are as follows:
 
 * ASSETS       GET - https://guarded-reef-25579.herokuapp.com/api/v1/assets
 * EXCHANGES    GET - https://guarded-reef-25579.herokuapp.com/api/v1/exchanges
