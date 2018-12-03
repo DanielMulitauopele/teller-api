@@ -23,10 +23,11 @@ This back-end application was built as the last solo project for Module 3 of the
 
 The application uses only 3 endpoints in its current iteration, with more to come in the future. These endpoints are loaded with data that is pulled from the ShapeShift API, as well as the CoinCap API. Future iterations will utilize Twitter's API and IBM's Watson. In order, for the application to run on a local machine, the user will need an application.yml file that holds the required environmental variables. The variables below will allows the user to access the ShapeShift API and the CoinCap API. For Twitter, the user will need to acquire their own API key:
 
-```production:
+```
+production:
   COINCAP_PATH: https://api.coincap.io
   SHAPESHIFT_PATH: https://shapeshift.io
-  ```
+```
 
 The endpoints are as follows:
 
