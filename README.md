@@ -45,12 +45,11 @@ TRANSACTIONS GET - https://guarded-reef-25579.herokuapp.com/api/v1/transactions
 
 ## Style and Design
 
-![landing-page](/lib/landing-page.png)
-![log-in-page](/lib/log-in-page.png)
-![sign-up-page](/lib/sign-up-page.png)
-![assets-page](/lib/assets-page.png)
-![exchanges-page](/lib/exchanges-page.png)
-![transactions-page](/lib/transactions-page.png)
+<img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/landing-page.png" title="landing-page" width="250"><img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/log-in-page.png" title="log-in-page" width="250">
+<img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/sign-up-page.png" title="sign-up-page" width="250">
+<img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/assets-page.png" title="assets-page" width="250">
+<img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/exchanges-page.png" title="exchanges-page" width="250">
+<img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/transactions-page.png" title="transactions-page" width="250">
 
 ## Tools and Dependencies
 
