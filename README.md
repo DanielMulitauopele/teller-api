@@ -45,8 +45,7 @@ The application uses only 3 endpoints in its current iteration, with more to com
 
 ## Style and Design
 
-<img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/landing-page.png" title="landing-page" width="250"><img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/log-in-page.png" title="log-in-page" width="250">
-<img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/sign-up-page.png" title="sign-up-page" width="250">
+<img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/landing-page.png" title="landing-page" width="270"><img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/log-in-page.png" title="log-in-page" width="250"><img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/sign-up-page.png" title="sign-up-page" width="250">
 <img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/assets-page.png" title="assets-page" width="250">
 <img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/exchanges-page.png" title="exchanges-page" width="250">
 <img src="https://github.com/DanielMulitauopele/teller-js/blob/master/lib/transactions-page.png" title="transactions-page" width="250">
