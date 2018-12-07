@@ -31,9 +31,11 @@ production:
 
 The endpoints are as follows:
 
-* ASSETS       GET - https://guarded-reef-25579.herokuapp.com/api/v1/assets
-* EXCHANGES    GET - https://guarded-reef-25579.herokuapp.com/api/v1/exchanges
-* TRANSACTIONS GET - https://guarded-reef-25579.herokuapp.com/api/v1/transactions
+```
+ASSETS       GET - https://guarded-reef-25579.herokuapp.com/api/v1/assets
+EXCHANGES    GET - https://guarded-reef-25579.herokuapp.com/api/v1/exchanges
+TRANSACTIONS GET - https://guarded-reef-25579.herokuapp.com/api/v1/transactions
+```
 
 ## Known Issues
 
