@@ -8,3 +8,7 @@ before_script:
 
 deploy:
   provider: heroku
+
+env:
+  COINCAP_PATH: https://api.coincap.io
+  SHAPESHIFT_PATH: https://shapeshift.io
