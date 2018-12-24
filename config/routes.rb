@@ -7,4 +7,5 @@ Rails.application.routes.draw do
     end
   end
   resources :authentications, only: [:create]
+  resources :users, only: [:create]
 end
