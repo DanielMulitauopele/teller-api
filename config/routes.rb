@@ -6,4 +6,5 @@ Rails.application.routes.draw do
       get '/exchanges', to: 'exchanges#index'
     end
   end
+  resources :authentications, only: [:create]
 end
