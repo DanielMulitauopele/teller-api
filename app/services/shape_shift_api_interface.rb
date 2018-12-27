@@ -18,6 +18,8 @@ class ShapeShiftApiInterface
   end
 
   def conn
-    Faraday.new(url: ENV['SHAPESHIFT_PATH'])
+    Faraday.new(url: ENV['SHAPESHIFT_PATH']) do |f|
+      f.adapter  Faraday.default_adapter
+    end
   end
 end

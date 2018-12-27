@@ -22,6 +22,8 @@ class CoinCapApiInterface
   end
 
   def conn
-    Faraday.new(url: ENV['COINCAP_PATH'])
+    Faraday.new(url: ENV['COINCAP_PATH']) do |f|
+      f.adapter  Faraday.default_adapter
+    end
   end
 end
