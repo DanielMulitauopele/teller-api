@@ -14,9 +14,12 @@ describe 'Transactions API' do
     it 'sends a list of transactions' do
       get '/api/v1/transactions', headers: {"Authorization" => "#{@user_teller_token}"}
       transactions = JSON.parse(response.body)
-
+      
       expect(response).to be_successful
       expect(response).to have_http_status(200)
+
+      expect(response.headers["Accept"]).to eq("application/json")
+      expect(response.headers["Content-Type"]).to eq("application/json")
 
       expect(transactions.class).to eq(Array)
       expect(transactions[0].class).to eq(Hash)

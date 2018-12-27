@@ -18,6 +18,9 @@ describe 'Assets API' do
       expect(response).to be_successful
       expect(response).to have_http_status(200)
 
+      expect(response.headers["Accept"]).to eq("application/json")
+      expect(response.headers["Content-Type"]).to eq("application/json")
+
       expect(assets.class).to eq(Array)
       expect(assets[0].class).to eq(Hash)
 

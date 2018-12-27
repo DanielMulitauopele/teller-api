@@ -18,6 +18,9 @@ describe 'Exchanges API' do
       expect(response).to be_successful
       expect(response).to have_http_status(200)
 
+      expect(response.headers["Accept"]).to eq("application/json")
+      expect(response.headers["Content-Type"]).to eq("application/json")
+
       expect(exchanges.class).to eq(Array)
       expect(exchanges[0].class).to eq(Hash)
       expect(exchanges[0]).to have_key("name")
