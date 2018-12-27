@@ -15,7 +15,7 @@ class Authorization
 
   def user
     # returns the user unless a user cannot be found or decoded_auth_token returns false
-    @user ||= User.find(decoded_auth_token[:user_id]) if decrypted_token
+    @user ||= User.find(decrypted_token[:user_id]) if decrypted_token
     @user || errors.add(:token, 'Your token is not valid.') && nil # either returns the user or throws an error & returns nothing
   end
 
