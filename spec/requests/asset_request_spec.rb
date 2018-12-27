@@ -54,7 +54,7 @@ describe 'Assets API' do
         expect(error["error"]).to eq("Not authorized to make this request")
       end
     end
-    describe 'without invalid credentials' do
+    describe 'with invalid credentials' do
       it 'sends an error message' do
         get '/api/v1/assets', headers: {"Authorization" => "INVALID"}
         error = JSON.parse(response.body)
