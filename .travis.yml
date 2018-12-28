@@ -7,6 +7,7 @@ before_script:
 script:
 - bundle exec rails server -e development -b 0.0.0.0 -p 3000
 - bundle exec rake
+- kill -9 $(cat tmp/pids/server.pid)
 deploy:
   provider: heroku
 env:
