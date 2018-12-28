@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  # Require Rails secret key 
+  # Require Rails secret key
   config.require_master_key = true
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -9,7 +9,7 @@ Rails.application.configure do
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
-  config.eager_load = true
+  config.eager_load = false
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
