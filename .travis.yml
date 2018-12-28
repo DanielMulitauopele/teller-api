@@ -5,8 +5,7 @@ before_script:
 - psql -c 'create database teller_test;' -U postgres
 - bundle exec rails db:migrate RAILS_ENV=test
 - "bundle exec rails server -p 3000 -d"
-script:
-- bundle exec rspec
+
 deploy:
   provider: heroku
 env:
