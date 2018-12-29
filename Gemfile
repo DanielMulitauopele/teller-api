@@ -17,6 +17,8 @@ gem 'faraday'
 gem 'figaro'
 gem 'active_model_serializers'
 gem 'rack-cors', require: 'rack/cors'
+gem 'jwt'
+gem 'simple_command'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
