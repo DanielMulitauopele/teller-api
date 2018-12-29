@@ -10,5 +10,6 @@ deploy:
   provider: heroku
 
 env:
+  secure: 8976607291d1a35654ff4dbacd3a5784
   COINCAP_PATH: https://api.coincap.io
   SHAPESHIFT_PATH: https://shapeshift.io
