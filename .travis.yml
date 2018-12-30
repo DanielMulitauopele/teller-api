@@ -1,14 +1,11 @@
 language: ruby
-
 services:
-  - postgresql
-
+- postgresql
 before_script:
-  - psql -c 'create database teller_test;' -U postgres
-
+- psql -c 'create database teller_test;' -U postgres
 deploy:
   provider: heroku
-
 env:
   COINCAP_PATH: https://api.coincap.io
   SHAPESHIFT_PATH: https://shapeshift.io
+  secure: hGqrDJFsiDIvTFzzbaDANKiUIYaMDl7cmxLmVvbSxSbQ4wKf5zmlUaAgce50B9LiXS5qIuCZZNSmuz73QFouXs8MHzYjQwuj48oEZDjm1KIN4E62n4tiz6ZAofNavckyyBAg9quuTDTsxIbKXi9V0Vz2SSNNUacXpLmXEokRenXAPD81OhiofQsHDh1p7WRt+Ab4j0KMhWCEQOBDfgFYV6ToYHNOCrcMQlRjFwtIQqNxUQGTH5UocDXn4EvVC8Hr19qLY/6D1xlaLoOB1F5rWw52dHyR54QaykCdyYTE89f3ON23vYBz/HTN5ckAz7Kl2twESPLbp25m3hNQhQXrD18sr/8GWKFBZ+O3ahJ66dqFX+VJFB/TZ/WmIAM6IJ51nUq0a8WHeW6WS8VaejASLJbNB9LensTA5E+uiFNkL4qBjHWmbERwD4ACz/e+nJUsIR2hsU8VJgJ2/+lEoWvqNbU4tgCxqk4v033ib1FuiC1TCmWzCoGeVxtcamiX7hU93Ry3sAKxzEXFU8+4kMd4fD6oSUKRCnjQukG1Kimku0s1vWoaMNn1CXAjG8Pt3YRq9xfSANHy7A2tq41lZ7fMGjUP1s0P57PqeJOierfb05hngSRESMfSq2YnIpv+ydxWHfQi0jP3bjI/Uf8njuDRUkkNEvKkeAc4rQ3PXn6/ri8=
