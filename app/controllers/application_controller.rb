@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user, :set_headers
-  
+  attr_reader :current_user
+
   private
   def authenticate_user
     @current_user = Authorization.call(request.headers).result
