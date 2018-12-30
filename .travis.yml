@@ -6,4 +6,7 @@ before_script:
 deploy:
   provider: heroku
 env:
+  COINCAP_PATH: https://api.coincap.io
+  SHAPESHIFT_PATH: https://shapeshift.io
+  
   secure: DeMv/SEKWMTsOv/xYrW9cf7is3TNK6SijMzBf88ZQZeBWYy1znBUrUKc7thfpRiAMbwx42turP71UUtOofLPMxvh+A5xE+IPlw18OGq/UiZrXCkFpsCpT9U+n2xOG6EWh6JemuULLrev35jnPe+/5Xk1HF/5wliZxzh6ajLrSS76ireIMktEbAZdC4X9990/MQ9Q1TMq0Mx6ENDa8tTWpuSG8/Anyj35B2CVVpsbuirsa0n5Nct1ZFbZi2y8HELJgCAtc1es6DTtXS+Zy3/xI0GaDJFn42BJV1WwQ5ocly7+V17+/yXSSDFMNrvhN3p47Sgv9Ma5HIspUsVljsuRZL1MxMPzYPwh5lEDVznjZneDOoiWRHY6kpzxmOXod318J16OJ1nd6gCn/DvZy/co8vgrTt+xzEfu5GCq9/99zVzcD30ud+79toKO5CV83BMreOpBdyNYI/apTw/AgUQo9/S4ivGWV7/opajCdEGdhMyytQfKcJIJtXdTLxqIBaLqKbmvpU/lcQDeMd2lkdAuYC11HyEa64GQYeAnmCV1qp9FJGGmsQnWZOhXXyhZvaLeZ81s7Y8kp5Qq4+hzN70nJ+jNhkUamAjboKt7BLPx8F3y0gxmJtdmHwTW5a+sTpSiffKFuVAOpqNHMW1wF7BI8qrHhRuBwdh+2dn5RIFDJmA=
