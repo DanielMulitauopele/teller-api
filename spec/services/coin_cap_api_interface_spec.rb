@@ -11,6 +11,7 @@ describe CoinCapApiInterface do
     @five_minute = @coincap.get_history("bitcoin", "m5")
     @fifteen_minute = @coincap.get_history("bitcoin", "m15")
     @thirty_minute = @coincap.get_history("bitcoin", "m30")
+    @hour = @coincap.get_history("bitcoin", "h1")
   end
 
   it "exists" do
