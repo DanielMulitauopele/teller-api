@@ -20,7 +20,7 @@ class CoinCapApiInterface
   end
 
   def get_history(coin, interval)
-    get_json("/v2/assets/#{coin}/history?interval=#{interval}")
+    get_json("/v2/assets/#{coin}/history?interval=#{interval}")[:data]
   end
 
   private
