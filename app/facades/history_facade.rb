@@ -1,7 +1,6 @@
 class HistoryFacade
   def history(coin, interval)
     cc_service.get_history(coin, interval).map do |history_snapshot|
-      require "pry"; binding.pry
       Snapshot.new(history_snapshot)
     end
   end
