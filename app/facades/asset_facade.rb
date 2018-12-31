@@ -5,6 +5,10 @@ class AssetFacade
     end
   end
 
+  def asset(coin_name)
+    Asset.new(cc_service.get_asset)
+  end
+
   private
 
   def cc_service

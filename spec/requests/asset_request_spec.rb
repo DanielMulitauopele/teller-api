@@ -42,6 +42,20 @@ describe 'Assets API' do
       expect(assets[0]["price_usd"]).not_to be(nil)
       expect(assets[0]["percent_change_24_hr"]).not_to be(nil)
     end
+
+    it "sends a specific asset" do
+      get '/api/v1/assets/bitcoin', headers: {"Authorization" => "#{@user_teller_token}"}
+      bitcoin = JSON.parse(response.body)
+
+      expect(response).to be_successful
+      expect(response).to have_http_status(200)
+
+      expect(response.headers["Accept"]).to eq("application/json")
+      expect(response.headers["Content-Type"]).to eq("application/json")
+
+      expect(bitcoin.class).to eq(Hash)
+      expect(bitcoin[0].class).to eq(Hash)
+    end
   end
   describe 'invalid request' do
     describe 'without auth headers' do
