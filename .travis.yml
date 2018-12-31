@@ -1,7 +1,4 @@
 language: ruby
-
-cache: bundler
-
 services:
 - postgresql
 before_script:
