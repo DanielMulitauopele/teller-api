@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       resources :assets, only: [:show] do
         resources :history, only: [:index]
       end
-      
+
       resources :transactions, only: [:index]
       resources :exchanges, only: [:index]
     end
