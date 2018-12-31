@@ -7,6 +7,7 @@ describe CoinCapApiInterface do
     @rates = @coincap.get_rates
     @exchanges = @coincap.get_exchanges
     @markets = @coincap.get_markets
+    @minute = @coincap.get_history("bitcoin", "m1")
   end
 
   it "exists" do
@@ -31,5 +32,15 @@ describe CoinCapApiInterface do
   it "should return coincap markets" do
     expect(@markets).to be_a(Hash)
     expect(@markets[:data]).to be_an(Array)
+  end
+
+  it "should return minute history of specific coin" do
+    expect(@minute).to be_a(Hash)
+    expect(@minute[:data]).to be_an(Array)
+  end
+  
+  it "should return minute history of specific coin" do
+    expect(@minute).to be_a(Hash)
+    expect(@minute[:data]).to be_an(Array)
   end
 end

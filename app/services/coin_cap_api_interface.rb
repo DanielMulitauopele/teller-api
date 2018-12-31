@@ -15,6 +15,10 @@ class CoinCapApiInterface
     get_json('v2/markets')
   end
 
+  def get_history(coin, interval)
+    get_json("/v2/assets/#{coin}/history?interval=#{interval}")
+  end
+
   private
 
   def get_json(url)
