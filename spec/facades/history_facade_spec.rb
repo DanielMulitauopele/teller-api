@@ -9,7 +9,7 @@ describe HistoryFacade do
     expect(bitcoin_price[:data]).to be_an(Array)
     expect(bitcoin_price[:data][0]).to have_key('price')
     expect(bitcoin_price[:data][0]).to have_key('time')
-    expect(bitcoin_price[:data][0]).to have_key('circ_supply')
+    expect(bitcoin_price[:data][0]).to have_key('supply')
     expect(bitcoin_price[:data][0]).to have_key('date')
   end
 end
