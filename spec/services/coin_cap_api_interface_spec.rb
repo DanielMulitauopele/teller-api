@@ -45,51 +45,51 @@ describe CoinCapApiInterface do
 
   it "should return coincap markets" do
     expect(@markets).to be_a(Hash)
-    expect(@markets[:data]).to be_an(Array)
+    expect(@markets.first).to be_an(Array)
   end
 
   it "should return minute history of specific coin" do
-    expect(@minute).to be_a(Hash)
-    expect(@minute[:data]).to be_an(Array)
+    expect(@minute).to be_a(Array)
+    expect(@minute.first).to be_an(Hash)
   end
 
   it "should return 5 minute history of specific coin" do
-    expect(@five_minute).to be_a(Hash)
-    expect(@five_minute[:data]).to be_an(Array)
+    expect(@five_minute).to be_a(Array)
+    expect(@five_minute.first).to be_an(Hash)
   end
 
   it "should return 15 minute history of specific coin" do
-    expect(@fifteen_minute).to be_a(Hash)
-    expect(@fifteen_minute[:data]).to be_an(Array)
+    expect(@fifteen_minute).to be_a(Array)
+    expect(@fifteen_minute.first).to be_an(Hash)
   end
 
   it "should return 30 minute history of specific coin" do
-    expect(@thirty_minute).to be_a(Hash)
-    expect(@thirty_minute[:data]).to be_an(Array)
+    expect(@thirty_minute).to be_a(Array)
+    expect(@thirty_minute.first).to be_an(Hash)
   end
 
   it "should return hour history of specific coin" do
-    expect(@hour).to be_a(Hash)
-    expect(@hour[:data]).to be_an(Array)
+    expect(@hour).to be_a(Array)
+    expect(@hour.first).to be_an(Hash)
   end
 
   it "should return 2 hour history of specific coin" do
-    expect(@two_hour).to be_a(Hash)
-    expect(@two_hour[:data]).to be_an(Array)
+    expect(@two_hour).to be_a(Array)
+    expect(@two_hour.first).to be_an(Hash)
   end
 
   it "should return 6 hour history of specific coin" do
-    expect(@six_hour).to be_a(Hash)
-    expect(@six_hour[:data]).to be_an(Array)
+    expect(@six_hour).to be_a(Array)
+    expect(@six_hour.first).to be_an(Hash)
   end
 
   it "should return 12 hour history of specific coin" do
-    expect(@twelve_hour).to be_a(Hash)
-    expect(@twelve_hour[:data]).to be_an(Array)
+    expect(@twelve_hour).to be_a(Array)
+    expect(@twelve_hour.first).to be_an(Hash)
   end
 
   it "should return day history of specific coin" do
-    expect(@day).to be_a(Hash)
-    expect(@day[:data]).to be_an(Array)
+    expect(@day).to be_a(Array)
+    expect(@day.first).to be_an(Hash)
   end
 end
