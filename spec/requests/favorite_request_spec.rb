@@ -2,12 +2,16 @@ require 'rails_helper'
 
 describe 'Favorites API' do
   describe 'valid request with auth' do
-    before do
+    before (:each) do
       user_params = { email: "groot@email.com",
                       password: "IamGrootIamGroot",
                       password_confirmation: "IamGrootIamGroot"
                     }
       post '/users', params: { user: user_params }
+
+      @user = User.all.last
+      require "pry"; binding.pry
+      @favorite = @user.favorites.create!(name: "bitcoin", price_usd: 123.45, percent_change_24_hr: ".34")
       @user_teller_token = JSON.parse(response.body)["teller_api_token"]
     end
 
