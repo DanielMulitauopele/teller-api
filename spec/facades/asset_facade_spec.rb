@@ -14,7 +14,6 @@ describe AssetFacade do
     af = AssetFacade.new
     bitcoin = af.asset('bitcoin')
 
-    expect(bitcoin).to be_a(Hash)
-    expect(bitcoin[:data]).to be_a(Hash)
+    expect(bitcoin).to be_an(Asset)
   end
 end

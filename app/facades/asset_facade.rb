@@ -6,7 +6,7 @@ class AssetFacade
   end
 
   def asset(coin_name)
-    Asset.new(cc_service.get_asset)
+    Asset.new(cc_service.get_asset(coin_name)[:data])
   end
 
   private
