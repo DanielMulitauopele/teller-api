@@ -8,9 +8,10 @@ Rails.application.routes.draw do
 
       resources :transactions, only: [:index]
       resources :exchanges, only: [:index]
+      resources :favorites, only: [:index]
     end
   end
-  
+
   resources :authentications, only: [:create]
   resources :users, only: [:create]
 end
