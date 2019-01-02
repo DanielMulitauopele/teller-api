@@ -15,6 +15,7 @@ describe CoinCapApiInterface do
     @two_hour = @coincap.get_history("bitcoin", "h2")
     @six_hour = @coincap.get_history("bitcoin", "h6")
     @twelve_hour = @coincap.get_history("bitcoin", "h12")
+    @day = @coincap.get_history("bitcoin", "d1")
   end
 
   it "exists" do
@@ -79,5 +80,10 @@ describe CoinCapApiInterface do
   it "should return 12 hour history of specific coin" do
     expect(@twelve_hour).to be_a(Hash)
     expect(@twelve_hour[:data]).to be_an(Array)
+  end
+
+  it "should return day history of specific coin" do
+    expect(@day).to be_a(Hash)
+    expect(@day[:data]).to be_an(Array)
   end
 end
