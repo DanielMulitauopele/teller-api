@@ -11,11 +11,11 @@ describe 'History API' do
       @user_teller_token = JSON.parse(response.body)["teller_api_token"]
 
       @coin = "bitcoin"
-      @interval = "h1"
+      @hour = "h1"
     end
 
     it "should return list of price changes by interval" do
-      get "/api/v1/assets/#{@coin}/history?interval=#{@interval}", headers: {"Authorization" => "#{@user_teller_token}"}
+      get "/api/v1/assets/#{@coin}/history?interval=#{@hour}", headers: {"Authorization" => "#{@user_teller_token}"}
 
       history = JSON.parse(response.body)
 
