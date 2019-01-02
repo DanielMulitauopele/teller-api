@@ -9,4 +9,12 @@ describe AssetFacade do
     expect(assets.first).to be_an(Asset)
     expect(assets.last).to be_an(Asset)
   end
+
+  it "should list single asset" do
+    af = AssetFacade.new
+    bitcoin = af.asset('bitcoin')
+
+    expect(bitcoin).to be_a(Hash)
+    expect(bitcoin[:data]).to be_a(Hash)
+  end
 end
