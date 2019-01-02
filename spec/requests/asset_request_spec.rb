@@ -42,6 +42,36 @@ describe 'Assets API' do
       expect(assets[0]["price_usd"]).not_to be(nil)
       expect(assets[0]["percent_change_24_hr"]).not_to be(nil)
     end
+    it "sends a specific asset" do
+      get '/api/v1/assets/bitcoin', headers: {"Authorization" => "#{@user_teller_token}"}
+      bitcoin = JSON.parse(response.body)
+
+      expect(response).to be_successful
+      expect(response).to have_http_status(200)
+
+      expect(response.headers["Accept"]).to eq("application/json")
+      expect(response.headers["Content-Type"]).to eq("application/json")
+
+      expect(bitcoin.class).to eq(Hash)
+
+      expect(bitcoin).to have_key("name")
+      expect(bitcoin).to have_key("rank")
+      expect(bitcoin).to have_key("symbol")
+      expect(bitcoin).to have_key("supply")
+      expect(bitcoin).to have_key("max_supply")
+      expect(bitcoin).to have_key("market_cap_usd")
+      expect(bitcoin).to have_key("price_usd")
+      expect(bitcoin).to have_key("percent_change_24_hr")
+
+      expect(bitcoin["name"]).not_to be(nil)
+      expect(bitcoin["rank"]).not_to be(nil)
+      expect(bitcoin["symbol"]).not_to be(nil)
+      expect(bitcoin["supply"]).not_to be(nil)
+      expect(bitcoin["max_supply"]).not_to be(nil)
+      expect(bitcoin["market_cap_usd"]).not_to be(nil)
+      expect(bitcoin["price_usd"]).not_to be(nil)
+      expect(bitcoin["percent_change_24_hr"]).not_to be(nil)
+    end
   end
   describe 'invalid request' do
     describe 'without auth headers' do

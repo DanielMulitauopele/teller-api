@@ -3,6 +3,10 @@ class CoinCapApiInterface
     get_json('/v2/assets')[:data]
   end
 
+  def get_asset(coin_name)
+    get_json("/v2/assets/#{coin_name}")
+  end
+
   def get_rates
     get_json('v2/rates')
   end
@@ -13,6 +17,10 @@ class CoinCapApiInterface
 
   def get_markets
     get_json('v2/markets')
+  end
+
+  def get_history(coin, interval)
+    get_json("/v2/assets/#{coin}/history?interval=#{interval}")[:data]
   end
 
   private
