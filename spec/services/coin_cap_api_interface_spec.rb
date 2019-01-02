@@ -4,6 +4,7 @@ describe CoinCapApiInterface do
   before (:each) do
     @coincap = CoinCapApiInterface.new
     @assets = @coincap.get_assets
+    @bitcoin = @coincap.get_asset('bitcoin')
     @rates = @coincap.get_rates
     @exchanges = @coincap.get_exchanges
     @markets = @coincap.get_markets
@@ -25,6 +26,11 @@ describe CoinCapApiInterface do
   it "should return coincap assets" do
     expect(@assets).to be_an(Array)
     expect(@assets.first).to be_a(Hash)
+  end
+
+  it "should return specific coincap asset" do
+    expect(@bitcoin).to be_an(Hash)
+    expect(@bitcoin[:data]).to be_a(Hash)
   end
 
   it "should return coincap rates" do
