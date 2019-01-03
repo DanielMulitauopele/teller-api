@@ -39,13 +39,13 @@ describe 'Favorites API' do
     describe 'POST requests' do
       it "should add a new favorite" do
         fav_params = {name: "ethereum", price_usd: 234.56, percent_change_24_hr: "3.14"}
-        post '/api/v1/favorites', headers: {"Authorization" => "#{@user_teller_token}"}, params: {user: fav_params}
+        post '/api/v1/favorites', headers: {"Authorization" => "#{@user_teller_token}"}, params: {favorite: fav_params}
 
         expect(response).to be_successful
         expect(response).to have_http_status(201)
         expect(response.headers["Accept"]).to eq("application/json")
         expect(response.headers["Content-Type"]).to eq("application/json")
-
+        
         expect(@user.favorites.last.name).to eq(fav_params[:name])
       end
     end
