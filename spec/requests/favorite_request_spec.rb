@@ -45,8 +45,64 @@ describe 'Favorites API' do
         expect(response).to have_http_status(201)
         expect(response.headers["Accept"]).to eq("application/json")
         expect(response.headers["Content-Type"]).to eq("application/json")
-        
+
         expect(@user.favorites.last.name).to eq(fav_params[:name])
+      end
+    end
+  end
+
+  describe 'invalid request' do
+    describe 'without auth headers' do
+      it 'sends an error message' do
+        fav_params = {name: "ethereum", price_usd: 234.56, percent_change_24_hr: "3.14"}
+        post '/api/v1/favorites', headers: {"Authorization" => "#{@user_teller_token}"}, params: {favorite: fav_params}
+
+        error = JSON.parse(response.body)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(401)
+        expect(error["error"]).to eq("Not authorized to make this request")
+      end
+    end
+    describe 'without favorite params' do
+      before (:each) do
+        user_params = { email: "groot@email.com",
+          password: "IamGrootIamGroot",
+          password_confirmation: "IamGrootIamGroot"
+        }
+        post '/users', params: { user: user_params }
+
+        @user_teller_token2 = JSON.parse(response.body)["teller_api_token"]
+      end
+      it 'sends an error message when missing name' do
+        fav_params = {price_usd: 234.56, percent_change_24_hr: "3.14"}
+        post '/api/v1/favorites', headers: {"Authorization" => "#{@user_teller_token2}"}, params: {favorite: fav_params}
+
+        error = JSON.parse(response.body)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(400)
+        expect(error["error"]).to eq("Something went wrong. Your favorite did not save. Please try again.")
+      end
+      it 'sends an error message when missing price' do
+        fav_params = {name: "ethereum", percent_change_24_hr: "3.14"}
+        post '/api/v1/favorites', headers: {"Authorization" => "#{@user_teller_token2}"}, params: {favorite: fav_params}
+
+        error = JSON.parse(response.body)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(400)
+        expect(error["error"]).to eq("Something went wrong. Your favorite did not save. Please try again.")
+      end
+      it 'sends an error message when missing percent change' do
+        fav_params = {name: "ethereum", price: 345.56}
+        post '/api/v1/favorites', headers: {"Authorization" => "#{@user_teller_token2}"}, params: {favorite: fav_params}
+
+        error = JSON.parse(response.body)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(400)
+        expect(error["error"]).to eq("Something went wrong. Your favorite did not save. Please try again.")
       end
     end
   end
