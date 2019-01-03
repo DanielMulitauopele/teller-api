@@ -1,6 +1,5 @@
 class Api::V1::FavoritesController < ApplicationController
   def index
-    require "pry"; binding.pry
-    render json: Favorite.all
+    render json: Favorite.where(user_id: @current_user.id)
   end
 end

@@ -10,7 +10,6 @@ describe 'Favorites API' do
       post '/users', params: { user: user_params }
 
       @user = User.all.last
-      require "pry"; binding.pry
       @favorite = @user.favorites.create!(name: "bitcoin", price_usd: 123.45, percent_change_24_hr: ".34")
       @user_teller_token = JSON.parse(response.body)["teller_api_token"]
     end
