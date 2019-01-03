@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
       resources :transactions, only: [:index]
       resources :exchanges, only: [:index]
-      resources :favorites, only: [:index]
+      resources :favorites, only: [:index, :create]
     end
   end
 
