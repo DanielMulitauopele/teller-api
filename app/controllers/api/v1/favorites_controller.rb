@@ -1,4 +1,6 @@
 class Api::V1::FavoritesController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def index
     render json: Favorite.where(user_id: @current_user.id)
   end

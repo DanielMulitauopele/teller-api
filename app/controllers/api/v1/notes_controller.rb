@@ -1,4 +1,6 @@
 class Api::V1::NotesController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def index
     render json: Note.where(user_id: @current_user.id)
   end

@@ -1,4 +1,6 @@
 class Api::V1::HistoryController < ApplicationController
+  skip_before_action :authenticate_user, :verify_authenticity_token
+  
   def index
     if params[:asset_id] && params[:interval]
       render json: HistoryFacade.new.history(params[:asset_id], params[:interval])
