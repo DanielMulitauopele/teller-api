@@ -5,4 +5,5 @@ class User < ApplicationRecord
   validates :email, uniqueness: {case_sensitive: false}
 
   has_many :favorites
+  has_many :notes
 end
