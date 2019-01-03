@@ -25,26 +25,26 @@ describe 'Transactions API' do
       expect(transactions[0].class).to eq(Hash)
     end
   end
-  describe 'invalid request' do
-    describe 'without auth headers' do
-      xit 'sends an error message' do
-        get '/api/v1/transactions'
-        error = JSON.parse(response.body)
-
-        expect(response).to_not be_successful
-        expect(response).to have_http_status(401)
-        expect(error["error"]).to eq("Not authorized to make this request")
-      end
-    end
-    describe 'with invalid credentials' do
-      xit 'sends an error message' do
-        get '/api/v1/transactions', headers: {"Authorization" => "INVALID"}
-        error = JSON.parse(response.body)
-
-        expect(response).to_not be_successful
-        expect(response).to have_http_status(401)
-        expect(error["error"]).to eq("Not authorized to make this request")
-      end
-    end
-  end
+  # describe 'invalid request' do
+  #   describe 'without auth headers' do
+  #     xit 'sends an error message' do
+  #       get '/api/v1/transactions'
+  #       error = JSON.parse(response.body)
+  #
+  #       expect(response).to_not be_successful
+  #       expect(response).to have_http_status(401)
+  #       expect(error["error"]).to eq("Not authorized to make this request")
+  #     end
+  #   end
+  #   describe 'with invalid credentials' do
+  #     xit 'sends an error message' do
+  #       get '/api/v1/transactions', headers: {"Authorization" => "INVALID"}
+  #       error = JSON.parse(response.body)
+  #
+  #       expect(response).to_not be_successful
+  #       expect(response).to have_http_status(401)
+  #       expect(error["error"]).to eq("Not authorized to make this request")
+  #     end
+  #   end
+  # end
 end
