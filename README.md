@@ -8,7 +8,7 @@
 
  * [Teller App Production](https://teller-app.herokuapp.com/)
  * [Teller App Repository](https://github.com/DanielMulitauopele/teller)
- * [Teller A.I. Production](https://github.com/DanielMulitauopele/teller-ai)
+ * [Teller A.I. Production](https://teller-ai.herokuapp.com/)
  * [Teller A.I. Repository](https://github.com/DanielMulitauopele/teller-ai)
  * [Teller Prototype Production](https://danielmulitauopele.github.io/teller-js/)
  * [Teller Prototype Repository](https://github.com/DanielMulitauopele/teller-js)
@@ -78,38 +78,212 @@ To run this application locally, take the following steps:
 * [Shoulda-Matchers](https://github.com/thoughtbot/shoulda-matchers)
 * [SimpleCov](https://github.com/colszowka/simplecov)
 
-## Core Contributors
+## Contributors
 
 * [Daniel Mulitauopele](https://github.com/DanielMulitauopele)
 * [Autumn Martin](https://github.com/Autumn-Martin)
 
-## How to Use
+## API Endpoints
 
-The application uses only 3 endpoints in its current iteration, with more to come in the future. These endpoints are loaded with data that is pulled from the ShapeShift API, as well as the CoinCap API. Future iterations will utilize Twitter's API and IBM's Watson. In order, for the application to run on a local machine, the user will need an application.yml file that holds the required environmental variables. The variables below will allows the user to access the ShapeShift API and the CoinCap API. For Twitter, the user will need to acquire their own API key:
+The assets, exchanges, transactions, and history endpoints of this application pull directly from the CoinCap and Shapeshift API's. Users, Notes, and Favorites pull from the Teller database.
 
+### Assets Endpoints
+
+#### GET /api/v1/assets
+
+Returns all assets from the CoinCap API.
+
+**Request**
 ```
-production:
-  COINCAP_PATH: https://api.coincap.io
-  SHAPESHIFT_PATH: https://shapeshift.io
-```
-
-The endpoints are as follows:
-
-```
-ASSETS       GET - https://guarded-reef-25579.herokuapp.com/api/v1/assets
-EXCHANGES    GET - https://guarded-reef-25579.herokuapp.com/api/v1/exchanges
-TRANSACTIONS GET - https://guarded-reef-25579.herokuapp.com/api/v1/transactions
+GET /api/v1/assets
 ```
 
-## Known Issues
+**Response**
+```json
+[
+  {
+    "name": "Bitcoin",
+    "rank": "1",
+    "symbol": "BTC",
+    "supply": "17460662.0000000000000000",
+    "max_supply": "21000000.0000000000000000",
+    "market_cap_usd": "67654273436.8413584576687298",
+    "price_usd": "3874.6682936100222579",
+    "percent_change_24_hr": "-0.6910179145803684"
+  }, {
+    "name": "Ethereum",
+    "rank": "2",
+    "symbol": "ETH",
+    "supply": "104173601.4678000000000000",
+    "max_supply": null,
+    "market_cap_usd": "15649659054.6266973685607253",
+    "price_usd": "150.2267257167258246",
+    "percent_change_24_hr": "-1.2947653700466387"
+  }
+]
+```
 
-* Lack of authentication
-* Twitter API is not yet connected, and the full functionality is still in development at this point.
-* User does not yet have ability to access menu
+#### GET /api/v1/assets/:id
 
-## Running Tests
+Returns a song with the specific given `:id`.
 
-* Run rspec
+**Request**
+```
+GET /api/v1/assets/bitcoin
+```
+
+**Response**
+```json
+{
+  "name": "Bitcoin",
+  "rank": "1",
+  "symbol": "BTC",
+  "supply": "17460662.0000000000000000",
+  "max_supply": "21000000.0000000000000000",
+  "market_cap_usd": "67689983647.1601698750520544",
+  "price_usd": "3876.7134743894687312",
+  "percent_change_24_hr": "-0.5167689399092579"
+}
+```
+
+### Exchanges Endpoints
+
+#### GET /api/v1/exchanges
+
+Returns all exchanges from the ShapeShift API.
+
+**Request**
+```
+GET /api/v1/exchanges
+```
+
+**Response**
+```json
+[
+  {
+  "name": "Okex",
+  "dollar_volume": "625686114.1643301116325033",
+  "volume_percentage": "13.691983333390568938000000000000000000",
+  "available_pairs": "500",
+  "url": "https://www.okex.com/",
+  "timestamp": 1546530623245
+}, {
+  "name": "Binance",
+  "dollar_volume": "612767116.5340134454460197",
+  "volume_percentage": "13.409274965354211093000000000000000000",
+  "available_pairs": "377",
+  "url": "https://www.binance.com/",
+  "timestamp": 1546530623321
+  }
+]
+```
+
+### Transactions Endpoints
+
+#### GET /api/v1/transactions
+
+Returns 5 most recent transactions from the ShapeShift API.
+
+**Request**
+```
+GET /api/v1/transactions
+```
+
+**Response**
+```json
+[
+  {
+  "currency_in": "ETH",
+  "currency_out": "BTC",
+  "amount": 0.39857166344869605,
+  "timestamp": 1546530474.731
+}, {
+  "currency_in": "LTC",
+  "currency_out": "BTC",
+  "amount": 1,
+  "timestamp": 1546530313.173
+  }
+]
+```
+
+### History Endpoints
+
+#### GET /api/v1/assets/:id/history?interval=interval
+
+Returns history of a specific coin sorted by desired interval (1min, 5min, 15min, 30min, 1hr, 2hr, 6hr, 12hr, 1day). User must be registered.
+
+**Request**
+```
+GET /api/v1/assets/bitcoin/history?interval=h1
+```
+
+**Response**
+```json
+[
+  {
+  "price": "4018.0685318242561403",
+  "time": 1543939200000,
+  "supply": "17406450.0000000000000000",
+  "date": "2018-12-04T16:00:00.000Z"
+  },
+  {
+  "price": "3982.4547841844734652",
+  "time": 1543942800000,
+  "supply": "17406512.0000000000000000",
+  "date": "2018-12-04T17:00:00.000Z"
+  }
+]
+```
+
+### Favorites Endpoints
+
+#### GET /api/v1/favorites
+
+Pulls favorited assets that have been saved to the database.
+
+**Request**
+```
+GET /api/v1/favorites
+```
+
+**Response**
+```json
+[
+  {
+    "name": "bitcoin",
+    "price_usd": "3874.6682936100222579",
+    "percent_change_24_hr": "-0.6910179145803684"
+  }, {
+    "name": "ethereum",
+    "price_usd": "150.2267257167258246",
+    "percent_change_24_hr": "-1.2947653700466387"
+  }
+]
+```
+
+### Notes Endpoints
+
+#### GET /api/v1/notes
+
+Pulls notes that have been saved to the database.
+
+**Request**
+```
+GET /api/v1/notes
+```
+
+**Response**
+```json
+[
+  {
+    "title": "note 1",
+    "text": "note details"
+  }, {
+    "title": "note 2",
+    "text": "note details"
+  }
+]
+```
 
 ## How to Contribute
 
