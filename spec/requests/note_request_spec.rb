@@ -33,5 +33,19 @@ describe 'Notes API' do
       expect(notes[0]["title"]).not_to be(nil)
       expect(notes[0]["text"]).not_to be(nil)
     end
+
+    describe 'POST requests' do
+      it "should add a new note" do
+        note_params = {title: "big note things", text: "with small note details"}
+        post '/api/v1/notes', headers: {"Authorization" => "#{@user_teller_token}"}, params: {note: note_params}
+
+        expect(response).to be_successful
+        expect(response).to have_http_status(201)
+        expect(response.headers["Accept"]).to eq("application/json")
+        expect(response.headers["Content-Type"]).to eq("application/json")
+
+        expect(@user.notes.last.title).to eq(note_params[:title])
+      end
+    end
   end
-end 
+end
