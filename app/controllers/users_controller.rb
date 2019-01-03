@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def authenticate
     auth_new_user = Authentication.call(user_params[:email], user_params[:password])
 
