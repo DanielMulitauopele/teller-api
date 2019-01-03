@@ -52,26 +52,26 @@ describe 'History API' do
     end
   end
 
-  describe 'invalid request' do
-    describe 'without auth headers' do
-      xit 'sends an error message' do
-        get "/api/v1/assets/#{@coin}/history?interval=#{@hour}"
-        error = JSON.parse(response.body)
-
-        expect(response).to_not be_successful
-        expect(response).to have_http_status(401)
-        expect(error["error"]).to eq("Not authorized to make this request")
-      end
-    end
-    describe 'with invalid credentials' do
-      xit 'sends an error message' do
-        get "/api/v1/assets/#{@coin}/history?interval=#{@hour}", headers: {"Authorization" => "INVALID"}
-        error = JSON.parse(response.body)
-
-        expect(response).to_not be_successful
-        expect(response).to have_http_status(401)
-        expect(error["error"]).to eq("Not authorized to make this request")
-      end
-    end
-  end
+  # describe 'invalid request' do
+  #   describe 'without auth headers' do
+  #     xit 'sends an error message' do
+  #       get "/api/v1/assets/#{@coin}/history?interval=#{@hour}"
+  #       error = JSON.parse(response.body)
+  #
+  #       expect(response).to_not be_successful
+  #       expect(response).to have_http_status(401)
+  #       expect(error["error"]).to eq("Not authorized to make this request")
+  #     end
+  #   end
+  #   describe 'with invalid credentials' do
+  #     xit 'sends an error message' do
+  #       get "/api/v1/assets/#{@coin}/history?interval=#{@hour}", headers: {"Authorization" => "INVALID"}
+  #       error = JSON.parse(response.body)
+  #
+  #       expect(response).to_not be_successful
+  #       expect(response).to have_http_status(401)
+  #       expect(error["error"]).to eq("Not authorized to make this request")
+  #     end
+  #   end
+  # end
 end
