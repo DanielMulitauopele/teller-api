@@ -63,18 +63,20 @@ To run this application locally, take the following steps:
 
 **Production**
 
-* Faraday
-* Figaro
-* JSON Web Tokens
-* Rack-CORS
+* [Faraday](https://github.com/lostisland/faraday)
+* [Figaro](https://github.com/laserlemon/figaro)
+* [JSON Web Tokens](https://jwt.io/)
+* [Rack-CORS](https://github.com/cyu/rack-cors)
 
 **Development**
 
-* Database Cleaner
-* Factory Bot
-* Faker
-* Launchy
-* Shoulda-Matchers
+* [Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner)
+* [Factory Bot](https://github.com/thoughtbot/factory_bot)
+* [Faker](https://github.com/stympy/faker)
+* [Launchy](https://github.com/copiousfreetime/launchy)
+* [Pry](https://github.com/pry/pry)
+* [Shoulda-Matchers](https://github.com/thoughtbot/shoulda-matchers)
+* [SimpleCov](https://github.com/colszowka/simplecov)
 
 ## Core Contributors
 
