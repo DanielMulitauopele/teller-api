@@ -48,4 +48,50 @@ describe 'Notes API' do
       end
     end
   end
+
+  describe 'invalid request' do
+    describe 'without auth headers' do
+      it 'sends an error message' do
+        note_params = {title: "big note things", text: "with little note details"}
+        post '/api/v1/notes', headers: {"Authorization" => "#{@user_teller_token}"}, params: {note: note_params}
+
+        error = JSON.parse(response.body)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(401)
+        expect(error["error"]).to eq("Not authorized to make this request")
+      end
+    end
+    describe 'without note params' do
+      before (:each) do
+        user_params = { email: "groot@email.com",
+          password: "IamGrootIamGroot",
+          password_confirmation: "IamGrootIamGroot"
+        }
+        post '/users', params: { user: user_params }
+
+        @user_teller_token2 = JSON.parse(response.body)["teller_api_token"]
+      end
+      it 'sends an error message when missing title' do
+        note_params = {text: "dude, where's my title?"}
+        post '/api/v1/notes', headers: {"Authorization" => "#{@user_teller_token2}"}, params: {note: note_params}
+
+        error = JSON.parse(response.body)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(400)
+        expect(error["error"]).to eq("Something went wrong. Your note did not save. Please try again.")
+      end
+      it 'sends an error message when missing text' do
+        note_params = {title: "dude, where's my text?"}
+        post '/api/v1/notes', headers: {"Authorization" => "#{@user_teller_token2}"}, params: {note: note_params}
+
+        error = JSON.parse(response.body)
+
+        expect(response).to_not be_successful
+        expect(response).to have_http_status(400)
+        expect(error["error"]).to eq("Something went wrong. Your note did not save. Please try again.")
+      end
+    end
+  end
 end
