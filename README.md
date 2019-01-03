@@ -21,7 +21,7 @@
 * [Dependencies](#dependencies)
 * [Contributors](#contributors)
 * [API Endpoints](#api-endpoints)
-    * [Assets](#assets)
+    * [Assets](#assetsendpoints)
         * [Retrieve All Assets](#get-apiv1assets)
         * [Retrieve An Asset](#get-apiv1assetsid)
     * [Exchanges](#exchanges)
