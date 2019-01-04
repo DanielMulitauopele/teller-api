@@ -7,7 +7,6 @@
 ## Relevant Links
 
  * [Agile Board](https://waffle.io/DanielMulitauopele/teller)
-
  * [Teller App Production](https://teller-app.herokuapp.com/)
  * [Teller App Repository](https://github.com/DanielMulitauopele/teller)
  * [Teller A.I. Production](https://teller-ai.herokuapp.com/)
