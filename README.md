@@ -2,6 +2,8 @@
 
 [Live Link](https://teller-api.herokuapp.com/api/v1/assets)
 
+<img src="https://github.com/DanielMulitauopele/teller-api/blob/master/i-phone-022.png" title="new-log-in" width="auto">
+
 ## Relevant Links
 
  * [Agile Board](https://waffle.io/DanielMulitauopele/teller)
