@@ -1,6 +1,6 @@
 class Asset
   def initialize(asset_data)
-    @name = asset_data[:name]
+    @name = asset_data[:id]
     @rank = asset_data[:rank]
     @symbol = asset_data[:symbol]
     @supply = asset_data[:supply]
