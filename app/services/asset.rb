@@ -1,4 +1,6 @@
 class Asset
+  attr_reader :name, :symbol, :rank, :price_usd, :percent_change_24_hr
+
   def initialize(asset_data)
     @name = asset_data[:id]
     @rank = asset_data[:rank]
