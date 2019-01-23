@@ -1,4 +1,5 @@
 class Asset
+  include ActiveModel::Serialization
   attr_reader :name, :symbol, :rank, :price_usd, :percent_change_24_hr
 
   def initialize(asset_data)

@@ -6,6 +6,6 @@ class Api::V1::AssetsController < ApplicationController
   end
 
   def show
-    render json: AssetFacade.new.asset(params[:id])
+    render json: AssetFacade.new.asset(params[:id]), serializer: AssetSerializer
   end
 end
