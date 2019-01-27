@@ -38,7 +38,10 @@
 
 ## Description/Purpose
 
-This back-end application was initiated as the last solo project for Module 3 of the Back-End Engineering program at Turing School of Software and Design, and is continued as the final Capstone project for Mod 4. Students were tasked with designing a back-end API at the end of Module 3 that would be consumed in the initial week of the final mod. For the capstone, the project was expected to expand in scope. For this project, I chose to create a cryptocurrency-based API that consumed data from the CoinCap API as well as the ShapeShift API. The back-end was designed using Ruby on Rails, and in addition to a Django backend service that analyzes the tone of coin-related tweets, serves a separate front-end. The initial front-end was designed solely with HTML, CSS, and JavaScript, and served as a prototype for what the app would become in later iterations. Its current iteration is built using React and Redux.
+This back-end application was initiated as the last solo project for Module 3 of the Back-End Engineering program at Turing School of Software and Design, and is continued as the final Capstone project for Mod 4. Students were tasked with designing a back-end API at the end of Module 3 that would be consumed in the initial week of the final mod. For the capstone, the project was expected to expand in scope. For this project, I chose to create a cryptocurrency-based API that consumed data from the CoinCap API as well as the ShapeShift API. The back-end was designed using Ruby on Rails, and in addition to a Django backend service that analyzes the tone of coin-related tweets, serves a separate front-end. The initial front-end was designed solely with HTML, CSS, and JavaScript, and served as a prototype for what the app would become in later iterations. Its [current iteration](https://github.com/DanielMulitauopele/teller) is built using React.
+
+### Demo
+<img src="https://user-images.githubusercontent.com/36902512/51807912-2e3a2e80-224a-11e9-996e-a30dac144aad.gif">
 
 ## System Requirements
 
